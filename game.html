@@ -553,12 +553,12 @@ function handleInput(mx, my){
     } else {
       vsCPU = true;
       if (idx === 1) { turn = BLACK; cpuColor = WHITE; }
-      if (idx === 2) { turn = WHITE; cpuColor = BLACK; }
+      if (idx === 2) { turn = BLACK; cpuColor = BLACK; }
       if (idx === 3) {
         if (Math.random() < 0.5) {
           turn = BLACK; cpuColor = WHITE;
         } else {
-          turn = WHITE; cpuColor = BLACK;
+          turn = BLACK; cpuColor = BLACK;
         }
       }
       if (turn === cpuColor) setTimeout(cpuMove, 300);
@@ -618,4 +618,5 @@ requestAnimationFrame(draw);
 </script>
 </body>
 </html>
+
 
